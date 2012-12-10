@@ -20,3 +20,6 @@ project.xcworkspace
 *.out
 project.xcworkspace/
 .project
+titanium.xcconfig
+titanium.xcconfig.bak
+*.zip
