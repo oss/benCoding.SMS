@@ -8,6 +8,7 @@
 #import "TiBase.h"
 #import "TiHost.h"
 #import "TiUtils.h"
+#import <MessageUI/MFMessageComposeViewController.h>
 
 @implementation BencodingSmsModule
 
@@ -61,6 +62,11 @@
 	// optionally release any resources that can be dynamically
 	// reloaded once memory is available - such as caches
 	[super didReceiveMemoryWarning:notification];
+}
+
+-(BOOL)canSendText:(id) args
+{
+  return [MFMessageComposeViewController canSendText];
 }
 
 @end
